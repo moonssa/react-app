@@ -12,9 +12,13 @@ function App() {
     if (toDo === "") {
       return;
     }
-    setToDos((currentArray) => [toDo, ...currentArray]);
+    setToDos((currentArray) => [...currentArray, toDo]);
     setToDo("");
   };
+  const deleteBtn = (event) => {
+    console.log(event);
+  };
+
   console.log(toDos);
   return (
     <div>
@@ -31,7 +35,10 @@ function App() {
       <hr />
       <ul>
         {toDos.map((item, index) => (
-          <li key={index}> {item} </li>
+          <li key={index}>
+            {item}
+            <button onClick={deleteBtn}> ❌ </button>
+          </li>
         ))}
       </ul>
     </div>
