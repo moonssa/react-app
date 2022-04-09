@@ -2,14 +2,10 @@ import Button from "./Button";
 import styles from "./App.module.css";
 import { useEffect, useState } from "react";
 function Hello() {
-  function byFn() {
-    console.log("bye :(");
-  }
-  function hiFn() {
-    console.log("Created :)  !");
-    return byFn;
-  }
-  useEffect(hiFn, []);
+  useEffect(() => {
+    console.log("hi :)");
+    return () => console.log("bye :(");
+  }, []);
   return <h1>Hello</h1>;
 }
 function App() {
