@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/react-app/static/js/main.cd22d0a0.js",
+    "index.html": "/react-app/index.html",
+    "main.cd22d0a0.js.map": "/react-app/static/js/main.cd22d0a0.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.cd22d0a0.js"
+  ]
+}
